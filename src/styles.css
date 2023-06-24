@@ -1,0 +1,76 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel {
+  height: 500px;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.carousel-card {
+  height: 100%;
+  width: 100%;
+  min-width: 100%;
+  transition: 1s ease-in;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-prev {
+  position: absolute;
+  cursor: pointer;
+  left: 0;
+  top: 50%;
+  transform: translateY(-100%);
+}
+
+.carousel-next {
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+  top: 50%;
+  transform: translateY(-100%);
+}
+
+img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.carousel-dots {
+  width: 10px;
+  height: 10px;
+  margin-top: 10px;
+  background-color: black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* .carousel-dots::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 5px;
+  height: 5px;
+  background-color: black;
+} */
